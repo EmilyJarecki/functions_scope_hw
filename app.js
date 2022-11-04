@@ -10,17 +10,45 @@ function calculateCube(num) {
     volume = num**3
     return volume
 }
-console.log(calculateCube(5))
+//console.log(calculateCube(5))
 
-// 3. isAVowel
-function isAVowel(letter) {
-    // YOUR CODE HERE
-}
+
+
+// // 3. isAVowel //////////////////////////////Incomplete
+function isAVowel(string) {}
+//     // YOUR CODE HERE
+//     let arr = []
+//     let vowels = ["a", "e", "i", "o", "u"]
+//     let word = string.toLowerCase()
+//     arr.push(word)
+//     let letter = arr[0].split("")
+//     //console.log(fun.length)
+//     if (letter.length == 1 && vowels.indexOf(letter[0])){
+//         console.log("It's a character!")
+//         console.log(letter[0])
+//     }else{
+//         console.log(string)
+//         console.log("This is NOT a single character!")
+//     }
+//     //console.log(arr)
+
+//     // if (arr.length == 1){
+//     //     console.log("It's length one!")
+// }
+
+// isAVowel("b")
+//console.log(isAVowel("A"))
+
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    arr = []
+    arr.push(word1.length, word2.length)
+    return arr
 }
+console.log(getTwoLengths("Hank", "Hippopopalous"))
 
 // 5. sumArray
 function sumArray(arr) {
