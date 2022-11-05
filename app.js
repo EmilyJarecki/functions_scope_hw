@@ -116,7 +116,11 @@ function eulerFibo(num) {
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
+    let position = arr.indexOf("needle")
+    return `found the needle at position ${position}`
+
 }
+console.log(findNeedle((['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])))
 
 // 10. sumPositive
 function sumPositive(arr) {
@@ -128,7 +132,7 @@ function sumPositive(arr) {
     }
     return sum 
 }
-console.log(sumPositive([1, -4, 7, 12]))
+//console.log(sumPositive([1, -4, 7, 12]))
 
 module.exports = {
     calculateCube,
