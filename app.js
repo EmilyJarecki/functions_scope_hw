@@ -3,6 +3,8 @@
 // 1.2. Within a function, what is the difference between return and console.log?
 
 // 1.3.What are the implications of the ability of a function to return a value?
+//
+
 
 // 2. calculateCube
 function calculateCube(num) {
@@ -59,18 +61,35 @@ function sumArray(arr) {
     }
     return sum 
 }
-console.log(sumArray([1, 2, 3, 4, 5, 6]))
+//console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 
 // 6.1 checkPrime
+
 function checkPrime(num) {
     // YOUR CODE HERE
+    for(let i=2; i<num; i++){
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true
 }
 
 // 6.2 printPrimes
+
 function printPrimes(num) {
     // YOUR CODE HERE
+    for (let i=2; i<=num; i++){
+        if (checkPrime(i) === true){
+            console.log(i)
+        }
+    }
 }
+printPrimes(97)
+
+
+
 
 // 7. printLongestWord
 function printLongestWord(arr) {
