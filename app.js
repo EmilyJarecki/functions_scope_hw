@@ -16,31 +16,24 @@ function calculateCube(num) {
 
 
 
-// // 3. isAVowel //////////////////////////////Incomplete
-function isAVowel(string) {}
+// // 3. isAVowel
+function isAVowel(c) {
 //     // YOUR CODE HERE
-//     let arr = []
-//     let vowels = ["a", "e", "i", "o", "u"]
-//     let word = string.toLowerCase()
-//     arr.push(word)
-//     let letter = arr[0].split("")
-//     //console.log(fun.length)
-//     if (letter.length == 1 && vowels.indexOf(letter[0])){
-//         console.log("It's a character!")
-//         console.log(letter[0])
-//     }else{
-//         console.log(string)
-//         console.log("This is NOT a single character!")
-//     }
-//     //console.log(arr)
+    if (c.length != 1) 
+        return 0
 
-//     // if (arr.length == 1){
-//     //     console.log("It's length one!")
-// }
+    uc = c.toUpperCase()
 
-// isAVowel("b")
-//console.log(isAVowel("A"))
+    const vowelCheck = 
+        uc === "A" ||
+        uc === "E" ||
+        uc === "I" ||
+        uc === "O" ||
+        uc === "U"
 
+    return vowelCheck
+}
+console.log(isAVowel("a"))
 
 
 // 4. getTwoLengths
@@ -109,9 +102,17 @@ function printLongestWord(arr) {
 // BONUS!
 
 // 8. eulerFibo
+
 function eulerFibo(num) {
-    // YOUR CODE HERE
+//     // YOUR CODE HERE
+//     addArr = [1, 2]
+//     console.log(num)
+//     for (let i=2; i<=addArr[i]; i++){
+//         addArr[i]=addArr[i-1]+addArr[i-2]
+//         console.log(addArr[18])
+//     }
 }
+// eulerFibo(13)
 
 // 9. findNeedle
 function findNeedle(arr) {
@@ -120,7 +121,7 @@ function findNeedle(arr) {
     return `found the needle at position ${position}`
 
 }
-console.log(findNeedle((['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])))
+//console.log(findNeedle((['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])))
 
 // 10. sumPositive
 function sumPositive(arr) {
