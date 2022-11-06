@@ -38,7 +38,7 @@ function isAVowel(c) {
 
     return vowelCheck
 }
-console.log(isAVowel("a"))
+//console.log(isAVowel("a"))
 
 
 // 4. getTwoLengths
@@ -109,15 +109,21 @@ function printLongestWord(arr) {
 // 8. eulerFibo
 
 function eulerFibo(num) {
-//     // YOUR CODE HERE
-//     addArr = [1, 2]
-//     console.log(num)
-//     for (let i=2; i<=addArr[i]; i++){
-//         addArr[i]=addArr[i-1]+addArr[i-2]
-//         console.log(addArr[18])
-//     }
+// YOUR CODE HERE
+    addArr = [1, 2]
+    for (let i=2; i<=num; i++){
+        uc= addArr[i] = addArr[i-1]+addArr[i-2]
+        //console.log(uc)
+        while (addArr[i]<=num){
+            console.log(addArr[i])
+            break
+        }
+    }
 }
-// eulerFibo(13)
+
+eulerFibo(30)
+
+
 
 // 9. findNeedle
 function findNeedle(arr) {
