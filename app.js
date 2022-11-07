@@ -17,7 +17,7 @@ function calculateCube(num) {
     volume = num**3
     return volume
 }
-//console.log(calculateCube(5))
+console.log(calculateCube(5))
 
 
 
@@ -38,7 +38,7 @@ function isAVowel(c) {
 
     return vowelCheck
 }
-//console.log(isAVowel("a"))
+console.log(isAVowel("a"))
 
 
 // 4. getTwoLengths
@@ -48,7 +48,7 @@ function getTwoLengths(word1, word2) {
     arr.push(word1.length, word2.length)
     return arr
 }
-//console.log(getTwoLengths("Hank", "Hippopopalous"))
+console.log(getTwoLengths("Hank", "Hippopopalous"))
 
 // 5. sumArray
 function sumArray(arr) {
@@ -59,7 +59,7 @@ function sumArray(arr) {
     }
     return sum 
 }
-//console.log(sumArray([1, 2, 3, 4, 5, 6]))
+console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 
 // 6.1 checkPrime
@@ -84,7 +84,7 @@ function printPrimes(num) {
         }
     }
 }
-//printPrimes(97)
+printPrimes(97)
 
 
 
@@ -100,7 +100,7 @@ function printLongestWord(arr) {
     }return word
 }            
 
-//console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]))
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]))
 
 
 
@@ -112,8 +112,7 @@ function eulerFibo(num) {
 // YOUR CODE HERE
     addArr = [1, 2]
     for (let i=2; i<=num; i++){
-        uc= addArr[i] = addArr[i-1]+addArr[i-2]
-        //console.log(uc)
+        addArr[i] = addArr[i-1]+addArr[i-2]
         while (addArr[i]<=num){
             console.log(addArr[i])
             break
@@ -132,7 +131,7 @@ function findNeedle(arr) {
     return `found the needle at position ${position}`
 
 }
-//console.log(findNeedle((['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])))
+console.log(findNeedle((['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])))
 
 // 10. sumPositive
 function sumPositive(arr) {
@@ -144,7 +143,7 @@ function sumPositive(arr) {
     }
     return sum 
 }
-//console.log(sumPositive([1, -4, 7, 12]))
+console.log(sumPositive([1, -4, 7, 12]))
 
 module.exports = {
     calculateCube,
